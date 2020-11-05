@@ -81,7 +81,6 @@ header .navbar {
   padding: 1rem 1rem;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
-  background-color: #fff;
 }
 
 header .navbar .navbar-toggler {
@@ -104,7 +103,7 @@ header .navbar .nav-item {
 }
 
 header .scrolled {
-  padding: .2rem 1rem;
+  padding: .4rem 1rem;
   background-color: var(--white);
   -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
           box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -129,7 +128,7 @@ header .scrolled .navbar-toggler {
 }
 
 #home {
-  height: 90vh;
+  height: 100vh;
 }
 
 #home .home-container {
@@ -138,11 +137,12 @@ header .scrolled .navbar-toggler {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 100%;
 }
 
 #home .home-container .home-data {
-  margin-top: 10rem;
+  margin-top: 15rem;
   letter-spacing: 4px;
   color: var(--white);
 }
@@ -156,9 +156,8 @@ header .scrolled .navbar-toggler {
 }
 
 #about {
-  background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(50%, #fff), color-stop(50%, #27bab5aa), to(#27bab5aa));
-  background: linear-gradient(to right, #fff 0%, #fff 50%, #27bab5aa 50%, #27bab5aa 100%);
   height: 100%;
+  background-color: #fff;
 }
 
 #about p {
@@ -170,9 +169,13 @@ header .scrolled .navbar-toggler {
 }
 
 #features {
-  background: -webkit-gradient(linear, right top, left top, from(#fff), color-stop(50%, #fff), color-stop(50%, #27bab5aa), to(#27bab5aa));
-  background: linear-gradient(to left, #fff 0%, #fff 50%, #27bab5aa 50%, #27bab5aa 100%);
   height: 100%;
+  background-color: #fff;
+  background-image: url("https://images.unsplash.com/photo-1483982258113-b72862e6cff6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #features .card {
@@ -219,8 +222,7 @@ header .scrolled .navbar-toggler {
 }
 
 #contact {
-  background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(50%, #fff), color-stop(50%, #27bab5aa), to(#27bab5aa));
-  background: linear-gradient(to right, #fff 0%, #fff 50%, #27bab5aa 50%, #27bab5aa 100%);
+  background-color: #fff;
   height: 100%;
 }
 
