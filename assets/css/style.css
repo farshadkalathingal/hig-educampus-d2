@@ -231,7 +231,7 @@ header .scrolled .navbar-toggler {
   text-decoration: none;
 }
 
-#features {
+#courses {
   height: 100%;
   background-color: #fff;
   background-image: url("https://images.unsplash.com/photo-1483982258113-b72862e6cff6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
@@ -241,47 +241,60 @@ header .scrolled .navbar-toggler {
   background-attachment: fixed;
 }
 
-#features .card {
+#courses .card {
   background-color: #616161;
   color: #cacaca;
   margin: .5rem 0;
   padding: 1rem .5rem;
 }
 
-#features .card i {
+#courses .card i {
   font-size: 36px;
   margin-bottom: 1rem;
   color: var(--primary-color);
 }
 
-#features .card .card-title {
+#courses .card .card-title {
   color: #fff;
   text-transform: uppercase;
 }
 
-#stats {
-  background-color: var(--primary-color);
+#features .card {
+  border: none;
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.261);
+          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.261);
+  height: 160px;
 }
 
-#stats .stats {
-  text-align: center;
-  font-size: 35px;
-}
-
-#stats .stats .fa {
-  font-size: 38px;
-  margin-bottom: 1rem;
+#features .card .icon {
+  position: relative;
+  text-align: left;
+  background-color: #000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-left: 2rem;
   color: #fff;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#stats .stats .counting {
-  font-size: 48px;
-  font-weight: 600;
+#features .card .card-body {
+  margin-top: -2rem;
 }
 
-#stats .stats h5 {
-  text-transform: uppercase;
-  font-size: .95rem;
+#features .card .card-body span {
+  font-weight: 300;
 }
 
 #students .card {
