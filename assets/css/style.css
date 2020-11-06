@@ -266,6 +266,41 @@ header .scrolled .navbar-toggler {
   font-size: .95rem;
 }
 
+#students .card {
+  -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#students .card .user-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#students .card .student-details h3 {
+  font-weight: 300;
+}
+
+#students .card .student-details h6 {
+  font-weight: 200;
+}
+
+#students .card .student-details p::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f10d";
+  display: inline-block;
+  padding-right: 3px;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+#students .owl-dot {
+  outline: none;
+}
+
 #contact {
   background-color: #fff;
   height: 100%;
@@ -292,7 +327,7 @@ header .scrolled .navbar-toggler {
 }
 
 #contact .contact-info .contact-info-data a:hover {
-  color: #fff;
+  color: #a3a3a3;
   text-decoration: none;
 }
 
