@@ -141,6 +141,24 @@ header .scrolled .navbar-toggler {
   height: 100%;
 }
 
+#home .home-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+}
+
+#home .home-container .overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.637);
+  width: 100%;
+  height: 100vh;
+}
+
 #home .home-container .home-data {
   margin-top: 15rem;
   letter-spacing: 4px;
