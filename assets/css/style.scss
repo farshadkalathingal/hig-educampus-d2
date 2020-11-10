@@ -10,6 +10,7 @@
     --text-color: ;
 
     --body-font: 'Poppins', sans-serif;
+    --para-font: 'Open Sans', sans-serif;
 }
 
 * {
@@ -34,7 +35,7 @@ h1, h2, h3, h4, h5, h6, span, .btn {
 }
 
 p {
-    font-family: sans-serif;
+    font-family: var(--para-font);
 }
 
 #float-btn {
