@@ -425,4 +425,10 @@ footer .social-icons li {
   display: inline;
   padding: .5rem;
 }
+
+@media screen and (max-width: 500px) {
+  html, body {
+    overflow-x: hidden !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */

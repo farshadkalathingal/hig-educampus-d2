@@ -62,7 +62,8 @@
                     <div class="col-lg-8 col-md-12">
                         <div class="home-data">
                             <!-- <img data-aos="zoom-in" src="assets/img/logo1.png" alt="logo"> -->
-                            <h1 data-aos="zoom-in">Igniting a <span> Passion for Learning</span> <br> We are here to <span>Guide</span> you</h1>
+                            <h1 data-aos="zoom-in">Igniting a <span> Passion for Learning</span></h1>
+                            <h4>We are here to Guide you</h4>
                             <a href="#" class="btn btn-color mt-2" data-aos="zoom-in">Explore More</a>
                         </div>
                     </div>
@@ -381,7 +382,7 @@
             <h2>Contact</h2>
             <div class="row">
                 <div class="col-lg-6 col-md-12 text-left p-5">
-                    <form action="mailto:farshadkalathingal@gmail.com" method="post" enctype="text/plain">
+                    <form>
                         <div class="form-group" data-aos="fade-right">
                             <label for="name">Name</label>
                             <input type="text" class="form-control" id="name" placeholder="Name" required>
@@ -394,7 +395,7 @@
                           <label for="message">Message</label>
                           <textarea class="form-control" id="message" rows="3" placeholder="Message" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-color" data-aos="fade-right">Send Message</button>
+                        <button type="submit" class="btn btn-color" data-aos="fade-right" onclick="sendMail()">Send Message</button>
                       </form>
                 </div>
                 <div class="col-lg-6 col-md-12">
@@ -476,7 +477,7 @@
     <script src="assets/js/aos.js"></script>
 
     <!-- Send mail -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <!-- Waypoint -->
     <script src="assets/js/jquery.waypoints.min.js"></script>
@@ -494,21 +495,22 @@
 
     <script>
         function sendEmail() {
-        Email.send({
-            SecureToken : "<your generated token>",
-            To : 'recipient@example.com',
-            From : "sender@example.com",
-            Subject : "Test Email",
-            Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>",
-            Attachments : [
-            {
-                name : "smtp.png",
-                path : "https://…/smtp.png"
-            }]
+            var name = document.getElementById('name').text
+            var email = document.getElementById('email').text
+            var message = document.getElementById('message').text
+            
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "username",
+                Password : "password",
+                To : 'them@website.com',
+                From : "you@isp.com",
+                Subject : "Feedback from HiG Website",
+                Body : "Name: "+name+"\nEmail: "+email+"\nMessage: "+message+"."
             }).then(
-                  message => alert(message)
+              message => alert(message)
             );
         }
-        </script>
+    </script>
 </body>
 </html>
