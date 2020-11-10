@@ -81,6 +81,27 @@ textarea {
   resize: none;
 }
 
+#float-btn {
+  position: fixed;
+  bottom: calc(0px + 20px);
+  right: 30px;
+  z-index: 99;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background-color: var(--whatsapp-color);
+  color: white;
+  cursor: pointer;
+  padding: 8px 17px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
 header .navbar {
   padding: 1rem 1rem;
   -webkit-transition: all .5s ease;
@@ -429,6 +450,22 @@ footer .social-icons li {
 @media screen and (max-width: 500px) {
   html, body {
     overflow-x: hidden !important;
+  }
+  #about .notification-area {
+    margin-top: 2rem !important;
+    margin: 0 auto;
+  }
+  #features .card {
+    margin: 1.5rem 0;
+  }
+  footer .text-center {
+    margin-top: 1rem;
+  }
+  footer .text-center h6 {
+    text-align: left;
+  }
+  footer .text-center .links {
+    margin-left: 4rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
