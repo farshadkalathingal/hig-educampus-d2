@@ -77,6 +77,10 @@ ul {
   list-style: none;
 }
 
+textarea {
+  resize: none;
+}
+
 header .navbar {
   padding: 1rem 1rem;
   -webkit-transition: all .5s ease;
@@ -160,7 +164,7 @@ header .scrolled .navbar-toggler {
 }
 
 #home .home-container .home-data {
-  margin-top: 15rem;
+  margin-top: 20rem;
   letter-spacing: 4px;
   color: var(--white);
 }
