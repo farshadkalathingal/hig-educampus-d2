@@ -451,9 +451,24 @@ footer .social-icons li {
   html, body {
     overflow-x: hidden !important;
   }
+  #home {
+    height: 50vh;
+  }
+  #home .home-container video {
+    height: 50vh;
+  }
+  #home .home-container .overlay {
+    height: 50vh;
+  }
   #home .home-container .home-data {
-    margin-top: 15rem;
+    margin-top: 5rem;
     letter-spacing: 1px;
+  }
+  #home .home-container .home-data h1 {
+    font-size: 2.3rem;
+  }
+  #home .home-container .home-data h4 {
+    font-size: 1rem;
   }
   #about .about-data {
     text-align: center;
