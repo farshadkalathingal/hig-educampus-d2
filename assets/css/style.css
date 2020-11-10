@@ -193,7 +193,7 @@ header .scrolled .navbar-toggler {
 }
 
 #home .home-container .home-data {
-  margin-top: 20rem;
+  margin-top: 17rem;
   letter-spacing: 2px;
   color: var(--white);
 }
@@ -205,6 +205,14 @@ header .scrolled .navbar-toggler {
 #home .home-container .home-data span {
   color: var(--primary-color);
   font-weight: 700;
+}
+
+#home .home-container .home-data h1 {
+  font-size: 3rem;
+}
+
+#home .home-container .home-data h4 {
+  font-size: 1.5rem;
 }
 
 #about {
