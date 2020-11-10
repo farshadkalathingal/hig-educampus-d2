@@ -204,6 +204,7 @@ header .scrolled .navbar-toggler {
 
 #home .home-container .home-data span {
   color: var(--primary-color);
+  font-weight: 700;
 }
 
 #about {
