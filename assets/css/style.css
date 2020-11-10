@@ -458,17 +458,8 @@ footer .social-icons li {
   html, body {
     overflow-x: hidden !important;
   }
-  #home {
-    height: 50vh;
-  }
-  #home .home-container video {
-    height: 50vh;
-  }
-  #home .home-container .overlay {
-    height: 50vh;
-  }
   #home .home-container .home-data {
-    margin-top: 5rem;
+    margin-top: 18rem;
     letter-spacing: 1px;
   }
   #home .home-container .home-data h1 {
