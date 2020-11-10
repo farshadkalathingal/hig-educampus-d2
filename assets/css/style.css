@@ -19,11 +19,18 @@ html {
 
 body {
   background-color: var(--secondary-color);
-  font-family: var(--body-font);
 }
 
 .bg-color {
   background-color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6, span, .btn {
+  font-family: var(--body-font);
+}
+
+p {
+  font-family: sans-serif;
 }
 
 #float-btn {
