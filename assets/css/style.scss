@@ -201,7 +201,7 @@ header {
                 width: 20%;
             }
             margin-top: 20rem;
-            letter-spacing: 4px;
+            letter-spacing: 2px;
             color: var(--white);
 
             span {
@@ -481,7 +481,19 @@ footer {
         overflow-x: hidden !important;
     }
 
+    #home {     
+        .home-container {    
+            .home-data {
+                margin-top: 15rem;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
     #about {
+        .about-data {
+            text-align: center;
+        }
         .notification-area {
             margin-top: 2rem !important;
             margin: 0 auto;
@@ -491,6 +503,16 @@ footer {
     #features {
         .card {
             margin: 1.5rem 0;
+        }
+    }
+
+    #contact {
+        form {
+            text-align: center;
+            
+            .form-group  {
+                text-align: left;
+            }
         }
     }
 
@@ -504,6 +526,25 @@ footer {
             .links {
                 margin-left: 4rem;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    html, body {
+        overflow-x: hidden !important;
+    }
+
+    #about {
+        .notification-area {
+            margin-top: 2rem !important;
+            margin: 0 auto;
+        }
+    }
+
+    #features {
+        .card {
+            margin: 1.5rem 0;
         }
     }
 }
