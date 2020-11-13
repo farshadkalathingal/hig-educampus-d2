@@ -7,11 +7,14 @@ AOS.init({
 
 
 
+
+
 jQuery(function($) {
 	
     'use strict';
     Active_Scroll();
     Window_Scroll();
+    Navbar_Dropdown();
     Smooth_Scroll();
     Owl_Carousel();
 });
@@ -34,6 +37,26 @@ var Smooth_Scroll = function() {
 		speedAsDuration: true
 	  });
 };
+
+var Navbar_Dropdown = function() {
+    // Prevent closing from click inside dropdown
+    $(document).on('click', '.dropdown-menu', function (e) {
+        e.stopPropagation();
+    });
+    
+    // make it as accordion for smaller screens
+    if ($(window).width() < 992) {
+        $('.dropdown-menu a').click(function(e){
+        e.preventDefault();
+            if($(this).next('.submenu').length){
+            $(this).next('.submenu').toggle();
+            }
+            $('.dropdown').on('hide.bs.dropdown', function () {
+        $(this).find('.submenu').hide();
+        })
+        });
+    }
+}
 
 var Owl_Carousel = function() {
     $('#courses .owl-carousel').owlCarousel({
