@@ -292,6 +292,7 @@ header .scrolled .navbar-toggler {
   color: #cacaca;
   margin: .5rem 0;
   padding: 1rem .5rem;
+  height: 260px;
 }
 
 #courses .card i {
