@@ -329,6 +329,18 @@ header {
     }
 }
 
+.bg-blue {
+    background: rgba(223,235,242,.49);
+}
+
+.bg-pink {
+    background: rgba(237, 125, 237, 0.2);
+}
+
+.bg-green {
+    background: rgba(183, 255, 175, 0.49);
+}
+
 #features {
     .card {
         border: none;
@@ -407,7 +419,7 @@ header {
     //     #27bab5 50%, 
     //     #27bab5 100%
     //   );
-    background-color: #fff;
+    // background-color: #fff;
         height: 100%;
 
     // margin-bottom: 360px;
