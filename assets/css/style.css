@@ -221,7 +221,10 @@ header .scrolled .navbar-toggler {
 
 #about {
   height: 100%;
-  background-color: #fff;
+  background-image: url("../img/bg-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
 }
 
 #about p {
@@ -318,6 +321,13 @@ header .scrolled .navbar-toggler {
   background: rgba(183, 255, 175, 0.49);
 }
 
+#features {
+  background-image: url("../img/bg-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25rem;
+}
+
 #features .card {
   border: none;
   -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.261);
@@ -393,6 +403,10 @@ header .scrolled .navbar-toggler {
 
 #contact {
   height: 100%;
+  background-image: url("../img/bg-2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25rem;
 }
 
 #contact .contact-info {
