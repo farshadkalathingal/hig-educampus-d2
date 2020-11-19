@@ -38,11 +38,6 @@ p {
     font-family: var(--para-font);
 }
 
-.dropdown-menu {
-    border-radius: 0px;
-}
-
-
 #float-btn {
     position: fixed;
     bottom: calc(0px + 20px);
@@ -118,6 +113,8 @@ header {
     .navbar {
         padding: 1rem 1rem;
         transition: all .5s ease;
+        background-color: white;
+        box-shadow: 2px 2px 4px rgba($color: #000000, $alpha: 0.3);
         
         .navbar-toggler {
             color: #fff;
@@ -174,61 +171,56 @@ header {
     }
 }
 
+.dropdown-menu {
+    border-radius: 0px;
+}
+
 #home {
-    height: 100vh;
+    height: 80vh;
     
     .home-container {
-        background-image:linear-gradient(rgba(0, 0, 0, 0.486), rgba(0, 0, 0, 0.459)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+        background-image:linear-gradient(rgba(0, 0, 0, 0.486), rgba(0, 0, 0, 0.459)), url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-attachment: fixed;
+        background-color: var(--primary-color);
         height: 100%;
 
-        video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            -o-object-fit: cover;
-            object-fit: cover;
-            width: 100%;
-            height: 100vh;
-            pointer-events: none;
+    }
+
+    .home-data {
+
+        img {
+            width: 20%;
         }
-        
-        .overlay {
-            position: absolute;
-            background: rgba(0, 0, 0, 0.637);
-            width: 100%;
-            height: 100vh;
+        margin-top: 15rem;
+        color: var(--white);
+
+        span {
+            font-weight: 700;
         }
 
-        .home-data {
-
-            img {
-                width: 20%;
-            }
-            margin-top: 17rem;
-            letter-spacing: 2px;
-            color: var(--white);
-
-            span {
-                color: var(--primary-color);
-                font-weight: 700;
-            }
-
-            h1 {
-                font-size: 3rem;
-            }
-
-            h4 {
-                font-size: 1.5rem;
-            }
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
         }
+
+        h6 {
+            font-size: .9rem;
+        }
+    }
+
+    .course-container {
+        background-image:linear-gradient(rgba(0, 0, 0, 0.486), rgba(0, 0, 0, 0.459)), url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: var(--primary-color);
+        height: 100%;
     }
 }
 
-#about {
+section {
 //     background: linear-gradient(
 //     to right, 
 //     #fff 0%, 
@@ -242,12 +234,14 @@ header {
     background-position: center;
     background-size: auto;
 
-    p {
-        text-align: justify;
+    h1 {
+        font-weight: 600;
     }
 
     img {
         width: 80%;
+        border-radius: 13px;
+        // box-shadow: 4px 4px 16px rgba($color: #000000, $alpha: 0.3);
     }
 
     .notification-area {
@@ -289,166 +283,6 @@ header {
 
             a {
                 &:hover {
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-}
-
-#courses {
-//     background: linear-gradient(
-//     to left, 
-//     #fff 0%, 
-//     #fff 50%, 
-//     #27bab5 50%, 
-//     #27bab5 100%
-//   );
-    height: 100%;
-    background-color: #fff;
-    background-image: url('https://images.unsplash.com/photo-1483982258113-b72862e6cff6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-    .card {
-        background-color: #616161;
-        color: rgb(202, 202, 202);
-        margin: .5rem 0;
-        padding: 1rem .5rem;
-        height: 260px;
-        i {
-            font-size: 36px;
-            margin-bottom: 1rem;
-            color: var(--primary-color);
-        }
-        .card-title {
-            color: #fff;
-            text-transform: uppercase;
-        }
-    }
-}
-
-.bg-blue {
-    background: rgba(223,235,242,.49);
-}
-
-.bg-pink {
-    background: rgba(237, 125, 237, 0.2);
-}
-
-.bg-green {
-    background: rgba(183, 255, 175, 0.49);
-}
-
-#features {
-    background-image: url("../img/bg-1.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 25rem;
-    .card {
-        border: none;
-        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.261);
-        height: 160px;
-
-        .icon {
-            position: relative;
-            text-align: left;
-            background-color: #000;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            transform: translateY(-50%);
-            margin-left: 2rem;
-            color: #fff;
-            font-size: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .card-body {
-            margin-top: -2rem;
-
-            span {
-                font-weight: 300;
-            }
-        }
-    }
-}
-
-#students {
-    .card {
-        box-shadow: 4px 4px 8px rgba($color: #000000, $alpha: 0.3);
-        .user-img {
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            margin: 0 auto;
-            object-fit: cover;
-        }
-
-        .student-details {
-            h3{
-                font-weight: 300;
-            }
-
-            h6 {
-                font-weight: 200;
-            }
-
-            p {
-                &::before {
-                    font-family: "Font Awesome 5 Free";
-                    content: "\f10d";
-                    display: inline-block;
-                    padding-right: 3px;
-                    font-weight:900;
-                    font-size: 2rem;
-                }
-            }
-        }
-    }
-
-    .owl-dot {
-        outline: none;
-    }
-}
-
-#contact {
-    // background: linear-gradient(
-    //     to right, 
-    //     #fff 0%, 
-    //     #fff 50%, 
-    //     #27bab5 50%, 
-    //     #27bab5 100%
-    //   );
-    // background-color: #fff;
-    height: 100%;
-    background-image: url("../img/bg-2.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 25rem;
-
-    // margin-bottom: 360px;
-
-    .contact-info {
-        display: flex;
-        margin: 1rem 0;
-        font-size: 18px;
-        .contact-info-data {
-            margin-left: 1rem;
-
-            font-size: 18px;
-            color: rgb(68, 68, 68);
-
-            a {
-                color: rgb(68, 68, 68);
-                transition: all .5s ease;
-
-                &:hover {
-                    color: rgb(163, 163, 163);
                     text-decoration: none;
                 }
             }
@@ -523,14 +357,7 @@ footer {
     }
 
     #home {  
-        // height: 50vh;
         .home-container {   
-            // video {
-            //     height: 50vh;
-            // } 
-            // .overlay {
-            //     height: 50vh;
-            // }
             .home-data {
                 margin-top: 18rem;
                 letter-spacing: 1px;
@@ -546,30 +373,9 @@ footer {
         }
     }
 
-    #about {
+    section {
         .about-data {
             text-align: center;
-        }
-        .notification-area {
-            width: 100%;
-            margin-top: 2rem !important;
-            margin: 0 auto;
-        }
-    }
-
-    #features {
-        .card {
-            margin: 1.5rem 0;
-        }
-    }
-
-    #contact {
-        form {
-            text-align: center;
-            
-            .form-group  {
-                text-align: left;
-            }
         }
     }
 
@@ -596,12 +402,6 @@ footer {
         .notification-area {
             margin-top: 2rem !important;
             margin: 0 auto;
-        }
-    }
-
-    #features {
-        .card {
-            margin: 1.5rem 0;
         }
     }
 }
