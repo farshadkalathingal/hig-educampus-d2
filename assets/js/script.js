@@ -46,7 +46,7 @@ var Navbar_Dropdown = function() {
     
     // make it as accordion for smaller screens
     if ($(window).width() < 992) {
-        $('.dropdown-menu a').click(function(e){
+        $('.dropdown-menu .sub-menu').click(function(e){
         e.preventDefault();
             if($(this).next('.submenu').length){
             $(this).next('.submenu').toggle();
