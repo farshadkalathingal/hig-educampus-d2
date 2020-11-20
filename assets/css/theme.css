@@ -61,6 +61,7 @@ p {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   padding: .7rem 1.5rem;
+  border-radius: 1px;
 }
 
 .btn-color:hover {
@@ -217,12 +218,34 @@ header .scrolled .navbar-toggler {
   height: 100%;
 }
 
+.modal-content {
+  border-radius: 13px 0px 13px 13px;
+}
+
+.modal-content .modal-header .close {
+  padding: .5rem .5rem;
+  font-size: 42px;
+  font-weight: 300;
+  outline: none;
+}
+
+.modal-content .modal-body .contents {
+  list-style: square;
+  margin-left: 1.5rem;
+  list-style-type: square;
+}
+
+.modal-content .modal-body .contents li {
+  font-size: 1.2rem;
+  margin: .5rem 0;
+}
+
+.modal-content .modal-body .contents li:last-child {
+  color: red;
+}
+
 section {
   height: 100%;
-  background-image: url("../img/bg-1.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
 }
 
 section h1 {
@@ -356,6 +379,9 @@ footer .social-icons li {
   section .about-data {
     text-align: center;
   }
+  section img {
+    margin-top: 1rem;
+  }
   footer .text-center {
     margin-top: 1rem;
   }
@@ -370,10 +396,6 @@ footer .social-icons li {
 @media screen and (max-width: 1024px) {
   html, body {
     overflow-x: hidden !important;
-  }
-  #about .notification-area {
-    margin-top: 2rem !important;
-    margin: 0 auto;
   }
 }
 
