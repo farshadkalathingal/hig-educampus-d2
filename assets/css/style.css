@@ -225,7 +225,7 @@ header .scrolled .navbar-toggler {
 
 #about {
   height: 100%;
-  background-image: url("../img/bg-1.svg");
+  background-image: url("../img/bg-4.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
@@ -284,6 +284,10 @@ header .scrolled .navbar-toggler {
   text-decoration: none;
 }
 
+#about::before {
+  content: '';
+}
+
 #courses {
   height: 100%;
   background-color: #fff;
@@ -326,10 +330,10 @@ header .scrolled .navbar-toggler {
 }
 
 #features {
-  background-image: url("../img/bg-1.svg");
+  background-image: url("../img/bg-5.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 25rem;
+  background-size: auto;
 }
 
 #features .card {
@@ -407,10 +411,10 @@ header .scrolled .navbar-toggler {
 
 #contact {
   height: 100%;
-  background-image: url("../img/bg-2.svg");
+  background-image: url("../img/bg-6.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 25rem;
+  background-size: auto;
 }
 
 #contact .contact-info {
