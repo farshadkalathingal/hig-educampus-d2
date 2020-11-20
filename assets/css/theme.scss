@@ -70,6 +70,19 @@ p {
     }
 }
 
+.btn-color-dark {
+    background-color: rgb(84, 83, 83);
+    color: var(--white);
+    transition: all .5s ease;
+    padding: .7rem 1.5rem;
+    border-radius: 1px;
+
+    &:hover {
+        background-color: #4b4b4b;
+        color: var(--white);
+    }
+}
+
 .btn-outline-color {
     border: solid 1px var(--primary-color);
     color: var(--primary-color);

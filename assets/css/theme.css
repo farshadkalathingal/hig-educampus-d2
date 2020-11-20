@@ -69,6 +69,20 @@ p {
   color: var(--white);
 }
 
+.btn-color-dark {
+  background-color: #545353;
+  color: var(--white);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  padding: .7rem 1.5rem;
+  border-radius: 1px;
+}
+
+.btn-color-dark:hover {
+  background-color: #4b4b4b;
+  color: var(--white);
+}
+
 .btn-outline-color {
   border: solid 1px var(--primary-color);
   color: var(--primary-color);
