@@ -20,15 +20,15 @@ jQuery(function($) {
 });
 
 // Window Scroll 
-var Window_Scroll = function() {
-    $(window).scroll(function() {
-        if ( $(window).scrollTop() > 20 ) {
-            $('nav').addClass('scrolled');
-        } else {
-            $('nav').removeClass('scrolled');
-        }
-    });
-};
+    var Window_Scroll = function() {
+        $(window).scroll(function() {
+            if ( $(window).scrollTop() > 20 ) {
+                $('nav').addClass('scrolled');
+            } else {
+                $('nav').removeClass('scrolled');
+            }
+        });
+    };
 
   /** Smooth Scroll */
 var Smooth_Scroll = function() {
