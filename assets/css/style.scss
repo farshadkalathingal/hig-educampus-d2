@@ -541,12 +541,12 @@ footer {
 
     .links {
         display: block;
-        margin: 0 auto;
+        // margin: 0 auto;
         width: fit-content;
         text-align: left;
         li {
             margin: .5rem 0;
-            margin-left: -4rem;
+            // margin-left: -4rem;
             a {
                 color: rgb(211, 211, 211);
                 transition: all .5s ease;

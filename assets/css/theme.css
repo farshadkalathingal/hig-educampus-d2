@@ -333,7 +333,6 @@ footer .footer-text {
 
 footer .links {
   display: block;
-  margin: 0 auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -342,7 +341,6 @@ footer .links {
 
 footer .links li {
   margin: .5rem 0;
-  margin-left: -4rem;
 }
 
 footer .links li a {
