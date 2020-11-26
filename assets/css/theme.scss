@@ -127,7 +127,7 @@ header {
     .navbar {
         padding: 1rem 1rem;
         transition: all .5s ease;
-        background-color: white;
+        background-color: black;
         box-shadow: 2px 2px 4px rgba($color: #000000, $alpha: 0.3);
         
         .navbar-toggler {
@@ -155,25 +155,25 @@ header {
     }
     .scrolled {
         padding: .4rem 1rem;
-        background-color: var(--white);
+        background-color: var(--black);
         box-shadow: 2px 2px 4px rgba($color: #000000, $alpha: 0.3);
         
         .navbar-nav {
             .active {
                 .nav-link {
-                    color: #000;
+                    color: #fff;
                 }
 
                 
             }
             .show > .nav-link {
-                color: #000;
+                color: #fff;
             }
             .nav-link {
                 color: rgb(114, 114, 114);
 
                 &:hover {
-                    color: rgb(41, 40, 40);
+                    color: rgb(255, 255, 255);
                 }
             }
         }
@@ -187,6 +187,11 @@ header {
 
 .dropdown-menu {
     border-radius: 0px;
+    background-color: #000;
+    color: #000;
+}
+.dropdown-item {
+    color: #fff;
 }
 
 #home {
@@ -341,7 +346,7 @@ footer {
     // right: 0;
     // z-index: -1;
     img {
-        width: 20%;
+        width: 30%;
     }
 
     .footer-text {
@@ -485,7 +490,7 @@ select.form-control:active {
 	.nav-item .submenu-left{ 
 		right:100%; left:auto;
 	}
-	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
+	.dropdown-menu > li:hover{ background-color: #727272 }
 	.dropdown-menu > li:hover > .submenu{
 		display: block;
 	}
