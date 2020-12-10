@@ -249,10 +249,6 @@ header .scrolled .navbar-toggler {
 
 #about {
   height: 100%;
-  background-image: url("../img/bg-4.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
 }
 
 #about p {
